@@ -1,5 +1,5 @@
 const { googleIt } = require('@bochilteam/scraper')
-let handler = async (m, { conn, command, args }) => {
+let handler = async (m, { conn, command, args }) => { 
 const fetch = (await import('node-fetch')).default
 let full = /f$/i.test(command)
 let text = args.join` `
