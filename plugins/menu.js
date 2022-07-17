@@ -1,20 +1,14 @@
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let fs = require('fs')
+let fetch = require('node-fetch')
+let moment = require('moment-timezone')
 let path = require('path')
-let { MessageType } = require('@adiwajshing/baileys')
-let PhoneNumber = require('awesome-phonenumber')
-let levelling = require('../lib/levelling')
+let util = require('util')
 let handler = async (m, { conn, usedPrefix }) => {
-let user = global.db.data.users[m.sender]
 let pp = './Menu2.jpg'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-try {
-} catch (e) {
-} finally {
-let { name, limit, exp, banned, lastclaim, registered, regTime, age, level } = global.db.data.users[m.sender]
-let { min, xp, max } = levelling.xpRange(level, global.multiplier)
 let username = conn.getName(who)
-let menu = `
+//let vn = './media/mariana.mp3'
+let menu =`
 ╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ║➤ *✨𝗛ola, ${username}!!*
@@ -63,47 +57,12 @@ let menu = `
 ┗━━━━━━━━━━━━━┛
 `.trim()
 let mentionedJid = [who]
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-templateMessage: {
-hydratedTemplate: {
-hydratedContentText: menu,
-locationMessage: { 
-jpegThumbnail: fs.readFileSync('./Menu2.jpg') },
-hydratedFooterText: '©𝑆𝑖𝑚𝑝𝑙𝑒𝐵𝑜𝑡',
-hydratedButtons: [{
-urlButton: {
-displayText: '𝙶𝙸𝚃𝙷𝚄𝙱',
-url: 'https://github.com/JEIRONY/BUFON'
-}},
-{
-urlButton: {
-displayText: '𝙲𝚁𝙴𝙰𝙳𝙾𝚁',
-url: 'https://wa.me/573152139466'    
-}},
-{
-quickReplyButton: {
-displayText: null,
-id: null,
-}},
-{
-quickReplyButton: {
-displayText: null,
-id: null,
-}},
-{
-quickReplyButton: {
-displayText: null,
-id: null,
-}}]}}
-}), { userJid: m.sender, quoted: m });
-return await conn.relayMessage(
-m.chat,
-template.message,
-{ messageId: template.key.id })    
-    
-}}
-handler.help = ['menu', 'help', '?']
-handler.tags = ['general']
-handler.command = /^(menucompleto|comandos|allmenu|info|speed|estado|menú|menu|help|\?)$/i
+conn.send3ButtonImg(m.chat, pp, menu, '©BUFON', '𝙼𝙴𝙽𝚄 𝚂𝙸𝙼𝙿𝙻𝙴', `#menusimple`, '𝙼𝙴𝙽𝚄 𝙰𝚄𝙳𝙸𝙾𝚂', `#menuaudios`, '𝙶𝚁𝚄𝙿𝙾𝚂 𝙾𝙵𝙸𝙲𝙸𝙰𝙻𝙴𝚂', `#grupos`, m, false, { contextInfo: { mentionedJid }})   
+//await await await await await await conn.sendFile(m.chat, vn, 'mariana.mp3', null, m, true, {
+//type: 'audioMessage', 
+//ptt: true 
+//})
+}
+handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos)$/i
 handler.fail = null
 module.exports = handler
