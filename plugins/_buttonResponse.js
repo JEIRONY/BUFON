@@ -36,7 +36,7 @@ command = (command || '').toLowerCase()
 let isId = plugin.command instanceof RegExp ? // RegExp Mode?
 plugin.command.test(command) :
 Array.isArray(plugin.command) ? // Array?
-plugin.command.some(cmd => cmd instanceof RegExp ? // RegExp in Array?
+plugin.command.some(cmd => cmd instanceof RegExp ? // RegExp in Array? 
 cmd.test(command) :
 cmd === command
 ) :
