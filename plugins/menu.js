@@ -23,43 +23,43 @@ let menu = `
 ┏━━━━━━━━━━━━━┓
 ┃ *< COMANDOS >*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣ ඬ⃟💫 _a_
-┣ ඬ⃟💫 _${usedPrefix}cat_
-┣ ඬ⃟💫 _${usedPrefix}dog_
-┣ ඬ⃟💫 _${usedPrefix}logos_
-┣ ඬ⃟💫 _${usedPrefix}runtime_
-┣ ඬ⃟💫 _${usedPrefix}tiktok *[url]*_
-┣ ඬ⃟💫 _${usedPrefix}sticker *[url]*_
-┣ ඬ⃟💫 _${usedPrefix}attp *[texto]*_
-┣ ඬ⃟💫 _${usedPrefix}google *[texto]*_
-┣ ඬ⃟💫 _${usedPrefix}imagen *[texto]*_
-┣ ඬ⃟💫 _${usedPrefix}play *[texto]*_
-┣ ඬ⃟💫 _${usedPrefix}play2 *[texto]*_
-┣ ඬ⃟💫 _${usedPrefix}ytmp3 *[url]*_
-┣ ඬ⃟💫 _${usedPrefix}ytmp4 *[url]*_
-┣ ඬ⃟💫 _${usedPrefix}tts *[lenguaje] [texto]*_
-┣ ඬ⃟💫 _${usedPrefix}toimg *[sticker]*_
-┣ ඬ⃟💫 _${usedPrefix}sticker *[imagen]*_
-┣ ඬ⃟💫 _${usedPrefix}tourl *[imagen]*_
-┣ ඬ⃟💫 _${usedPrefix}tourl *[video]*_
-┣ ඬ⃟💫 _${usedPrefix}tourl *[audio]*_
-┣ ඬ⃟💫 _${usedPrefix}fat *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}bass *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}blown *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}deep *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}fast *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}robot *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}slow *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}tupai *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}vibra *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}nightcore *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}earrape *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}reverse *[nota de voz]*_
-┣ ඬ⃟💫 _${usedPrefix}smooth *[nota de voz]*_
+┣ a
+┣ ${usedPrefix}cat
+┣ ${usedPrefix}dog
+┣ ${usedPrefix}logos
+┣ ${usedPrefix}runtime
+┣ ${usedPrefix}tiktok *[url]*
+┣ ${usedPrefix}sticker *[url]*
+┣ ${usedPrefix}attp *[texto]*
+┣ ${usedPrefix}google *[texto]*
+┣ ${usedPrefix}imagen *[texto]*
+┣ ${usedPrefix}play *[texto]*
+┣ ${usedPrefix}play2 *[texto]*
+┣ ${usedPrefix}ytmp3 *[url]*
+┣ ${usedPrefix}ytmp4 *[url]*
+┣ ${usedPrefix}tts *[lenguaje] [texto]*
+┣ ${usedPrefix}toimg *[sticker]*
+┣ ${usedPrefix}sticker *[imagen]*
+┣ ${usedPrefix}tourl *[imagen]*
+┣ ${usedPrefix}tourl *[video]*
+┣ ${usedPrefix}tourl *[audio]*
+┣ ${usedPrefix}fat *[nota de voz]*
+┣ ${usedPrefix}bass *[nota de voz]*
+┣ ${usedPrefix}blown *[nota de voz]*
+┣ ${usedPrefix}deep *[nota de voz]*
+┣ ${usedPrefix}fast *[nota de voz]*
+┣ ${usedPrefix}robot *[nota de voz]*
+┣ ${usedPrefix}slow *[nota de voz]*
+┣ ${usedPrefix}tupai *[nota de voz]*
+┣ ${usedPrefix}vibra *[nota de voz]*
+┣ ${usedPrefix}nightcore *[nota de voz]*
+┣ ${usedPrefix}earrape *[nota de voz]*
+┣ ${usedPrefix}reverse *[nota de voz]*
+┣ ${usedPrefix}smooth *[nota de voz]*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┃ *< OWNER >*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣ ඬ⃟💫 _${usedPrefix}update_
+┣ ${usedPrefix}update_
 ┗━━━━━━━━━━━━━┛
 `.trim()
 let mentionedJid = [who]
@@ -73,12 +73,12 @@ hydratedFooterText: '©𝑆𝑖𝑚𝑝𝑙𝑒𝐵𝑜𝑡',
 hydratedButtons: [{
 urlButton: {
 displayText: '𝙶𝙸𝚃𝙷𝚄𝙱',
-url: 'https://github.com/BrunoSobrino/SimpleBot'
+url: 'https://github.com/JEIRONY/BUFON'
 }},
 {
 urlButton: {
 displayText: '𝙲𝚁𝙴𝙰𝙳𝙾𝚁',
-url: 'https://wa.me/5219992095479'    
+url: 'https://wa.me/573152139466'    
 }},
 {
 quickReplyButton: {
