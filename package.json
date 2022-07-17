@@ -1,7 +1,7 @@
 {
-    "name": "SimpleBot",
+    "name": "BUFON",
     "version": "1.0.0",
-    "description": "Subscribete al canal de YT The Shadow Borkers",
+    "description": "Subscribete al canal de YT JEIRONY",
     "depecrated": false,
     "main": "index.js",
     "directories": {
@@ -27,9 +27,9 @@
         "multi-device",
         "wabot-aq"
     ],
-    "homepage": "https://github.com/BrunoSobrino",
+    "homepage": "https://github.com/JEIRONY",
     "author": {
-        "name": "BrunoSobrino"
+        "name": "JEIRONY"
     },
     "repository": {
         "type": "git",
